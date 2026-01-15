@@ -56,3 +56,19 @@ h1 a:visited{
 h1 a:hover {
     color: whitesmoke;
 }
+h2{
+    padding-left: 20px;
+    padding-top: 40PX;
+    font-family: 'Playfair_Display\,Work_Sans', sans-serif;
+}
+.locals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.local img{
+    width: 40px;  
+    height: 40px;
+}

@@ -58,6 +58,7 @@ h1 a:hover {
 }
 h2 {
     text-align: center;
+    font-family: 'Playfair_Display\,Work_Sans', sans-serif;
 }
 .competences {
     display: grid;
@@ -81,4 +82,18 @@ h2 {
 .competence img:hover {
     transform: scale(1.2); 
 }
+.next {
+    text-align: center;
+}
+
+.next img {
+    padding-top: 10px;
+    width: 80px;  
+    height: 80px;
+    transition: transform 0.3s; 
+}
+.next img:hover {
+    transform: scale(1.2); 
+}
+
 

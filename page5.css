@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Playfair_Display\,Work_Sans';
     src: url('fonts/Playfair_Display\,Work_Sans/') format('truetype');
@@ -19,7 +18,7 @@ body {
     );
     color: #ffffff;
     }
-    nav {
+nav {
     position: fixed;
     top: 0;               
     left: 0;             
@@ -37,7 +36,6 @@ nav ul  {
 }
 nav ul li a {
     text-decoration: none;
-    margin-right: 10px;
 }
 nav ul li a:visited{
                     color: black;
@@ -45,11 +43,6 @@ nav ul li a:visited{
 nav ul li a:hover {
     color: whitesmoke;
     text-decoration: underline;
-}
-#about {
-    text-align: center;
-    margin: 50px;
-    
 }
 h1{
     margin-left: 20px;
@@ -62,25 +55,4 @@ h1 a:visited{
 }
 h1 a:hover {
     color: whitesmoke;
-}
-
-.about-section {
-  text-align: center;
-  display: flex;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.about-label { 
-  text-decoration: #1a1a1a;
-  font-weight: bold;
-  min-width: 150px;
-  flex-shrink: 0;
-}
-
-.about-content {
-  flex: 1;
-}
-h2{
-    padding: 10px;
 }
