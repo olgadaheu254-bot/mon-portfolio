@@ -328,36 +328,84 @@
             font-size: 0.85rem;
         }
 
-        /* Veille Section */
-        .veille-content {
-            background: var(--bg-card);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid rgba(0, 212, 255, 0.1);
-        }
+                    /* Veille Section */
+                    .veille-intro {
+                color: var(--text-secondary);
+                font-size: 1rem;
+                line-height: 1.8;
+                border-left: 4px solid var(--accent-primary);
+                padding: 1.2rem 1.5rem;
+                background: var(--bg-card);
+                border-radius: 0 10px 10px 0;
+                margin-bottom: 2rem;
+            }
 
-        .veille-items {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
+            .veille-intro strong {
+                color: var(--text-primary);
+            }
 
-        .veille-item {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 10px;
-            border-left: 4px solid var(--accent-tertiary);
-            transition: all 0.3s ease;
-        }
+            .veille-section-label {
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--accent-secondary);
+                font-weight: 600;
+                margin-bottom: 1.2rem;
+            }
 
-        .veille-item:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateX(10px);
-        }
-        .about .cta-button {
-            margin-top: 2rem;
-            align-self: flex-start;
-        }
+            .veille-screenshots {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+
+            .screenshot-slot {
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid rgba(0, 212, 255, 0.15);
+                aspect-ratio: 16 / 10;
+                transition: all 0.3s ease;
+            }
+
+            .screenshot-slot:hover {
+                border-color: var(--accent-primary);
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+            }
+
+            .screenshot-slot img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .screenshot-placeholder {
+                background: var(--bg-card);
+                border: 2px dashed rgba(0, 212, 255, 0.25);
+                border-radius: 12px;
+                aspect-ratio: 16 / 10;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                color: var(--text-secondary);
+                font-size: 0.78rem;
+                text-align: center;
+                padding: 1rem;
+                transition: all 0.3s ease;
+            }
+
+            .screenshot-placeholder:hover {
+                border-color: var(--accent-primary);
+                color: var(--accent-primary);
+            }
+
+            .placeholder-icon {
+                font-size: 1.8rem;
+                opacity: 0.4;
+            }
 
         /* Contact Section */
         .contact-content {
