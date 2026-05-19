@@ -255,17 +255,18 @@
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
             gap: 2rem;
             margin-top: 3rem;
+            justify-content: center;
         }
-
         .project-card {
             background: var(--bg-card);
             border-radius: 15px;
             overflow: hidden;
             border: 1px solid rgba(0, 212, 255, 0.1);
             transition: all 0.3s ease;
+            max-width: 300px; /* ajoute ça */
         }
 
         .project-card:hover {
@@ -275,7 +276,7 @@
 
         .project-image {
             width: 100%;
-            height: 200px;
+            height: 100px;
             background: var(--gradient);
             display: flex;
             align-items: center;
@@ -284,7 +285,7 @@
         }
 
         .project-content {
-            padding: 1.5rem;
+            padding: 1rem;
         }
 
         .project-content h3 {
